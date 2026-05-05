@@ -11,14 +11,37 @@ Suplimentar, vom tine cont de firmele de la care se cumpara stocul, vom sti pret
 ## 2. Prezentarea constrângerilor (restricții, reguli) impuse asupra modelului
   Aici probabil e destul de optional
 ## 3. Descrierea entităților, incluzând precizarea cheii primare.
-#-> De aici incepi <-
+  ### ANGAJAT:
+  - persoana care se ocupa de vanzare/stocare
+  - cheie primara: angajat_id
+  ### CLIENT:
+  - persoana care cumpara medicamente 
+  - cheie primara: client_id
+  ### VANZARE:
+  - face legatura intre medicament si client
+  - cheie primara: vanzare_id
+  ### BON:
+  - face suma totala dupa cumpararea medicamentelor, entitate asociativa
+  - cheie primara: bon_id
+  ### INTRARE_STOC:
+  - face legatura intre stoc si fabrica
+  - cheie primara: intrare_stoc_id
+  ### FABRICA:
+  - organizatia care livreaza medicamente la farmacie
+  - cheie primara: fabrica_id
+  ### MEDICAMENT:
+  - produsul vandut de farmacie
+  - cheie primara: med_id
+  ### RETETA:
+  - fisa care o aduce clientul pentru achizitia medicamentelor semi-periculoase
+  - cheie primara: reteta_id
+  - 
 ## 4. Descrierea relațiilor, incluzând precizarea cardinalității acestora.
-| First Header  | Second Header |
-| ------------- | ------------- |
-| Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  |
-## 5. Descrierea atributelor, incluzând tipul de date și eventualele constrângeri, valori 
-implicite, valori posibile ale atributelor.
+| RELATIE  | CARDINALITATE | OBSERVATII |
+| ------------- | ------------- | --- |
+|||
+|||
+## 5. Descrierea atributelor, incluzând tipul de date și eventualele constrângeri, valori implicite, valori posibile ale atributelor.
 ### ANGAJAT
 | atribut | tip de date | constrangeri | valori pisibile/exemple | valori implicite | observatii | 
 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |

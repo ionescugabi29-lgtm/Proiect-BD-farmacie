@@ -4,7 +4,7 @@
 
 O apliceatie pentru gestionarea personalului cat si al stocului si vanzariilor intr-o farmacie, ofera utilizatorilor (farmacistilor) posibilitatea sa gestioneze toate informatiile necesare pentru buna functionare a farmaciei. Fiecare medicament si angajat sunt identificati printr-un numar unic de identificare, pentru medicamente vom cunoaste: numele acestora, substanta activa, vom cunoaste daca este nevoie de prescriptie pentru a fi achitat, pretul si data expirarii. Iar pentru angajati vom stii: numele, cnp-ul, numarul de telefon, salariul si programul acestora.
 
-Farmacia va tine in evidenta un istoric de vanzari, unde vom pastra numele si prenumele clinteiilor cat si bonul lor, pe care se va afla medicamentele cumparate, prescriptia si numele doctorului care a scris-o (daca este nevoie), pret-ul achitat si data achitarii.
+Farmacia va tine in evidenta un istoric de vanzari, unde vom pastra email-ul, numele si prenumele clinteiilor, pe care se va afla medicamentele cumparate si prescriptia (daca este nevoie), pret-ul achitat si data achitarii.
 
 Suplimentar, vom tine cont de firmele de la care se cumpara stocul, vom sti pretul platit pe marfa.
 
@@ -19,20 +19,13 @@ Suplimentar, vom tine cont de firmele de la care se cumpara stocul, vom sti pret
 | Content Cell  | Content Cell  |
 ## 5. Descrierea atributelor, incluzând tipul de date și eventualele constrângeri, valori 
 implicite, valori posibile ale atributelor.
-| First Header  | Second Header |
-| ------------- | ------------- |
-| Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  |
+### Angajati
+| atribut  | tip de date | | constrangeri | valori pisibile/exemple | | valori implicite | | observatii | 
+| ------------- | ------------- | | ------------- | ------------- | | ------------- | | ------------- |
+| Angajat_id | NUMBER  | | PK | | ------------- | | ------------- | | ------------- |
+| Nume | Varchar(20)  | | ------------- | ------------- | | ------------- | | ------------- |
+| Prenume | Varchar(20)  | | ------------- | ------------- | | ------------- | | ------------- |
 
-| First Header  | Second Header |
-| ------------- | ------------- |
-| Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  |
-
-| First Header  | Second Header |
-| ------------- | ------------- |
-| Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  |
  etc..
 
  ## 6. Realizarea diagramei entitate-relație corespunzătoare descrierii de la punctele 3-5

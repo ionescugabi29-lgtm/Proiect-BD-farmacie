@@ -44,65 +44,66 @@ Suplimentar, vom tine cont de firmele de la care se cumpara stocul, vom sti pret
 ### ANGAJAT
 | atribut | tip de date | constrangeri | valori pisibile/exemple | valori implicite | observatii | 
 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
-| Angajat_id | NUMBER | PK |
-| Nume | Varchar(20) |
-| Prenume | Varchar(20) |
-| CNP | NVARCHAR(13) |
+| angajat_id | NUMBER | PK |
+| nume | Varchar(20) |
+| prenume | Varchar(20) |
+| cnp | NVARCHAR(13) |
 
 ### VANZARE
 | atribut | tip de date | constrangeri | valori pisibile/exemple | valori implicite | observatii | 
 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
-| Vanzare_id | NUMBER | PK |
+| vanzare_id | NUMBER | PK |
 | data | DATE |
 
 ### MEDICAMENT
 | atribut | tip de date | constrangeri | valori pisibile/exemple | valori implicite | observatii | 
 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
-| Medicament_id | NUMBER | PK |
-| Nume | Varchar(20) | NOT NULL |
-| Substanta activa | NVarchar(20) | NOT NULL |
-| Pret | NUMBER | NOT NULL |
-| Necesita reteta | BOOLEAN | NOT NULL |
+| med_id | NUMBER | PK |
+| nume | Varchar(20) | NOT NULL |
+| substanta activa | NVarchar(20) | NOT NULL |
+| pret | NUMBER | NOT NULL |
+| data_expirare | DATE | NOT NULL |
+| necesita reteta | BOOLEAN | NOT NULL |
 
 ### CLIENT
 | atribut | tip de date | constrangeri | valori pisibile/exemple | valori implicite | observatii | 
 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
-| Client_id | NUMBER | PK |
-| Nume | Varchar(20) |
-| Email | NVarchar(20) |
+| client_id | NUMBER | PK |
+| nume | Varchar(20) |
+| email | NVarchar(20) |
 | nr_tel | NVarchar(20) |
 
 ### BON
 | atribut | tip de date | constrangeri | valori pisibile/exemple | valori implicite | observatii | 
 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
-| Angajat_id | NUMBER | PK |
-| Cantitate | NUMBER | NOT NULL |
-| Pret vanzare | NUMBER | NOT NULL |
-| Reducere | NUMBER |
+| bon_id | NUMBER | PK |
+| cantitate | NUMBER | NOT NULL |
+| pret vanzare | NUMBER | NOT NULL |
+| reducere | NUMBER |
 
 ### FABRICA
 | atribut | tip de date | constrangeri | valori pisibile/exemple | valori implicite | observatii | 
 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
-| Fabrica_id | NUMBER | PK |
-| Nume | Varchar(20) | NOT NULL |
-| Produse | NUMBER | NOT NULL |
-| Nume produs | NVarchar(30) |
+| fabrica_id | NUMBER | PK |
+| nume | Varchar(20) | NOT NULL |
+| produse | NUMBER | NOT NULL |
+| nume produs | NVarchar(30) |
 
 ### INTRARI_STOC
 | atribut | tip de date | constrangeri | valori pisibile/exemple | valori implicite | observatii | 
 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
-| Delivery_id | NUMBER | PK |
-| Cantitate | NUMBER |
-| Data_intrare | DATE |
+| intrari_stoc_id | NUMBER | PK |
+| cantitate | NUMBER |
+| cata_intrare | DATE |
 
 ### RETETA
 | atribut | tip de date | constrangeri | valori pisibile/exemple | valori implicite | observatii | 
 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
-| Reteta_id | NUMBER | PK |
-| Medic_nume | Varchar(20) |
-| Data emitere | DATE | NOT NULL |
-| Data expirare | DATE | NOT NULL |
-| Serie numar | NVarchar(20) |
+| reteta_id | NUMBER | PK |
+| medic_nume | Varchar(20) |
+| data emitere | DATE | NOT NULL |
+| data expirare | DATE | NOT NULL |
+| serie numar | NVarchar(20) |
 
  ## 6. Realizarea diagramei entitate-relație corespunzătoare descrierii de la punctele 3-5
 *Poza cu ce am nevoie*

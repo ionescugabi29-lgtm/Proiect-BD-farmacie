@@ -20,11 +20,11 @@ Suplimentar, vom tine cont de firmele de la care se cumpara stocul, vom sti pret
 ## 5. Descrierea atributelor, incluzând tipul de date și eventualele constrângeri, valori 
 implicite, valori posibile ale atributelor.
 ### Angajati
-| atribut  | tip de date | | constrangeri | valori pisibile/exemple | | valori implicite | | observatii | 
-| ------------- | ------------- | | ------------- | ------------- | | ------------- | | ------------- |
-| Angajat_id | NUMBER  | | PK | | ------------- | | ------------- | | ------------- |
-| Nume | Varchar(20)  | | ------------- | ------------- | | ------------- | | ------------- |
-| Prenume | Varchar(20)  | | ------------- | ------------- | | ------------- | | ------------- |
+| atribut | tip de date | constrangeri | valori pisibile/exemple | valori implicite | observatii | 
+| ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
+| Angajat_id | NUMBER | PK | ------------- | ------------- | ------------- |
+| Nume | Varchar(20) | ------------- | ------------- | ------------- | ------------- |
+| Prenume | Varchar(20) | ------------- | ------------- | ------------- | ------------- |
 
  etc..
 

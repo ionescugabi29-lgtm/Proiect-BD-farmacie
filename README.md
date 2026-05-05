@@ -22,7 +22,7 @@ implicite, valori posibile ale atributelor.
 ### Angajati
 | atribut | tip de date | constrangeri | valori pisibile/exemple | valori implicite | observatii | 
 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
-| Angajat_id | NUMBER | PK | ------------- | ------------- | ------------- |
+| Angajat_id | NUMBER | PK | | | |
 | Nume | Varchar(20) | ------------- | ------------- | ------------- | ------------- |
 | Prenume | Varchar(20) | ------------- | ------------- | ------------- | ------------- |
 

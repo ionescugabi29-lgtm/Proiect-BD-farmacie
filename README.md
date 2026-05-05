@@ -35,7 +35,6 @@ Suplimentar, vom tine cont de firmele de la care se cumpara stocul, vom sti pret
   ### RETETA:
   - fisa care o aduce clientul pentru achizitia medicamentelor semi-periculoase
   - cheie primara: reteta_id
-  - 
 ## 4. Descrierea relațiilor, incluzând precizarea cardinalității acestora.
 | RELATIE  | CARDINALITATE | OBSERVATII |
 | ------------- | ------------- | --- |
